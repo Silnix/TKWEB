@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ví dụ 1-5-1 mở rộng</title>
+</head>
+
+<body>
+	<h1 align="center">ĐĂNG KÝ THÀNH VIÊN</h1>
+    <hr align="center" size="3" width="250" />
+	<form action="" name="dangnhap" method="post">
+    	<table align="left" bgcolor="#CCCCCC" border="1" bordercolor="#000000" cellspacing="0" >
+        	<tr>
+            	<td>Họ tên của bạn: </td>
+            	<td><input type="text" name="txtHTen" size="20" /></td>
+            </tr>
+            <tr>
+            	<td>Mã số sinh viên: </td>
+                <td><input type="text" name="txtMSSV" size="20" /></td>
+            </tr>
+            <tr>
+            	<td>Mật khẩu: </td>
+                <td><input type="password" name="psWMKhau" size="20" /></td>
+            </tr>
+            <tr>
+            	<td>Quê quán: </td>
+                <td>
+                	<select name="slQQuan">
+            			<option value="TV" selected="selected">Trà Vinh</option>
+                    	<option value="BT">Bến Tre</option>
+                    	<option value="ST">Sóc Trăng</option>
+                    	<option value="VL">Vĩnh Long</option>
+                    </select>
+           		</td>
+            </tr>
+            <tr>
+            	<td>Những môn đã tích lũy trên 8.5: </td>
+                <td>
+                	<select name="slMon" multiple="multiple">
+                    	<option value="Thiết kế Web" selected="selected">Thiết kế Web</option>
+                        <option value="Cơ sở dữ liệu">Cơ sở dữ liệu</option>
+                        <option value="Phân tich và Thiết kế HTTT">PT&amp;KHTTT</option>
+                        <option value="Đồ họa ứng dụng">Đồ họa ứng dụng</option>         	
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            	<fieldset>
+            	<td><legend>Giới tính: </legend></td>
+                <td>
+                	<input type="radio" name="rdGT" value="1" />Nam&nbsp;&nbsp;
+                    <input type="radio" name="rdGT" value="0" />Nữ
+                </td>
+                </fieldset>
+            </tr>
+            <tr>
+            	<td>Sở thích</td>
+                <td>
+                <input align="left" type="checkbox" name="chbxSThich" value="phim" />Xem phim, ca nhạc<br />
+                <input align="left" type="checkbox" name="chbxSThich" value="docbao" />Đọc báo<br />
+                <input align="left" type="checkbox" name="chbxSThich" value="luotweb" />Lướt Web
+                </td>
+            </tr>
+            <tr>
+            	<td>Quy định</td>
+                <td>
+                <textarea name="txtaQDinh" readonly="readonly" cols="80" rows="5">
+                - Diễn đàn sẽ không chấp nhận việc lợi dụng diễn đàn làm nơi trao đổi các thông tin phản động hay văn hóa phẩm đòi trụy.
+                - Nếu Ban quản trị phát hiện tài khoản của bạn có các hoạt động khả nghi, chúng tôi có quyền xóa tài khoản của bạn mà không cần báo trước.
+                </textarea>
+                </td>
+            </tr>
+            <td>
+            	<input type="submit" name="sbmDNhap" value="Đăng ký" />
+                <input type="reset" name="rsLLai" value="Làm lại" />
+            </td>
+        </table>
+    </form>
+</body>
+</html>
